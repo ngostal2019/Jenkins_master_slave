@@ -12,25 +12,25 @@
 `sudo systemctl start jenkins`
 `sudo systemctl status jenkins`
 
-## Open Jenkins via the web browser and read this file
+##Open Jenkins via the web browser and read this file
 `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
 
-## Set up the JAVA_HOME path:
+##Set up the JAVA_HOME path:
 `find / -name jre 2>/dev/null`
 `vim ~/.bash_profile`
 `JAVA_HOME= /path/to/jre`
 
 `source ~/.bash_profile # load your modifications to the Environment variable`
 
-## Set up the JAVA_HOME on the Jenkins Dashboard 
+##Set up the JAVA_HOME on the Jenkins Dashboard 
 `Manage Jenkins > Global Tools Configuration > JDK`
 
-## Configure the Jenkins Agent (Slaves) by clicking on build executer and follow these steps from my YouTube Channel
+##Configure the Jenkins Agent (Slaves) by clicking on build executer and follow these steps from my YouTube Channel
 
 
 # Clients Side Setup 
 
-## Enable the PasswordAuthentication in /etc/ssh/sshd_config
+##Enable the PasswordAuthentication in /etc/ssh/sshd_config
 
 `sudo vim /etc/ssh/sshd_config`
 `#PasswordAuthentication no` 
@@ -39,7 +39,7 @@
 ## reload the sshd daemond
 `sudo systemctl reload sshd`
 
-# Finally create Your users you wish Jenkins to remotely connect via ssh and a directory for the builds
+##Finally create Your users you wish Jenkins to remotely connect via ssh and a directory for the builds
 
 # Continuity of the Master configuration after jumping on the client
 
