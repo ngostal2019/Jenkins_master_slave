@@ -52,4 +52,4 @@ or
 ## Give back the ownership of /var/lib/jenkins/.ssh/known_hosts 
 `chown -R jenkinks:jenkins /var/lib/jenkins/.ssh`
 
-*Subscribe, Like, Share, Comment to help me improve !!!
+*Subscribe, Like, Share, Comment to help me improve !!!*
