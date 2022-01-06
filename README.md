@@ -44,10 +44,10 @@ sudo systemctl reload sshd
 # Continuity of the Master configuration after jumping on the client
 
 ## Do this after Enabling SSH connection from no to yes of the line having PasswordAuthentication in /etc/ssh/sshd_config on the slaves side
-mkdir /var/lib/jenkins/.ssh (As root user)
+ sh `mkdir /var/lib/jenkins/.ssh (As root user)
 ssh-keyscan -H slave_ip >> /var/lib/jenkins/.ssh/known_hosts
 or
-ssh-keyscan -H slave_hostname >> /var/lib/jenkins/.ssh/known_hosts (must have dns resolution)
+ssh-keyscan -H slave_hostname >> /var/lib/jenkins/.ssh/known_hosts (must have dns resolution)`
 
 ## Give back the ownership of /var/lib/jenkins/.ssh/known_hosts 
 chown -R jenkinks:jenkins /var/lib/jenkins/.ssh
